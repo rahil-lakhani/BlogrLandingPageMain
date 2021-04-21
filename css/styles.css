@@ -1,0 +1,685 @@
+/****** Default & General Styling ******/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    color: hsl(208, 49%, 24%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.65rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 1px hsl(208deg 49% 24%);
+}
+
+p {
+    color: hsl(207, 13%, 54%);
+    line-height: 1.85;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-shadow: 0.2px 0px 1px hsl(240deg 2% 79%);
+    margin: 10px 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+}
+
+.invisible {
+    display: none;
+}
+
+/* Wrapper */
+
+.wrapper {
+    background-color: white;
+    max-width: 375px;
+}
+
+/** Header **/
+
+header {
+    background-image: url(../images/bg-pattern-intro.svg), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: 36% 34%;
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    border-radius: 0 0 0 100px;
+    color: hsl(0, 0%, 100%);
+    padding: 55px 25px 145px;
+}
+
+/*** Navbar ***/
+
+nav {
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav_logo {
+    width: 85px;
+}
+
+.nav_menu {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 7px;
+    box-shadow: hsl(240deg 2% 79%) 0px 20px 35px -10px;
+    color: hsl(208, 49%, 24%);
+    position: absolute;
+    top: 75px;
+    transition: all 0.2s;
+    padding: 10px 25px 20px;
+    width: 100%;
+}
+
+.nav_menu_visibility {
+    display: none;
+}
+
+.nav_menu_list {
+    border-bottom: 1px solid hsl(240, 2%, 94%);
+}
+
+.nav_main_link_container {
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 22px auto;
+}
+
+.nav_main_link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 5px 10px 0 0;
+}
+
+.active_nav_menu,
+.nav_main_link:hover,
+.nav_login_btn:hover {
+    color: hsl(208, 49%, 35%);
+}
+
+.nav_menu_list img {
+    width: 11px;
+}
+
+.nav_secondary_menu {
+    background-color: hsl(240, 2%, 94%);
+    border-radius: 5px;
+    margin: 20px 0 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.nav_secondary_menu a {
+    color: hsl(208, 49%, 35%);
+    display: block;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 20px auto;
+}
+
+.nav_secondary_menu a:hover {
+    color: hsl(208, 49%, 14%);
+}
+
+.nav_secondary_menu_visibility {
+    display: none;
+}
+
+.nav_btns {
+    margin: 30px auto 5px;
+}
+
+.nav_btns a {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav_signup_btn {
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%) 20%, hsl(353, 100%, 62%));
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    padding: 11px 0;
+    margin: 20px auto 10px;
+    transition: all 0.2s;
+    width: 130px;
+}
+
+.nav_signup_btn:hover {
+    background-image: linear-gradient(to right, hsl(353, 100%, 62%), hsl(353, 100%, 62%));
+    color: hsl(0, 0%, 100%);
+}
+
+.light_arrow {
+    display: none;
+}
+
+.dark_arrow {
+    display: inline-block;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.nav_menu_controller {
+    cursor: pointer;
+}
+
+.nav_menu_controller img {
+    width: 34px;
+}
+
+.nav_menu_controller .close_icon {
+    width: 28px;
+}
+
+/*** Introduction ***/
+
+.introduction {
+    padding: 110px 10px 0;
+}
+
+h1 {
+    font-size: 2.10rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1.12rem;
+    margin: 20px 0 40px;
+    opacity: 0.8;
+}
+
+.introduction_btns {
+    justify-content: space-between;
+    padding: 10px 9px;
+}
+
+.introduction_btns a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.introduction_btns .btn {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 25px;
+    padding: 15px 0;
+    width: 135px;
+    transition: background-color 0.2s;
+}
+
+.introduction_btns .btn:hover {
+    border: none;
+}
+
+.start_btn {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+
+}
+
+.start_btn:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+
+.learn_btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(355, 100%, 74%);
+}
+
+/*** Designed for the Future ***/
+
+.designed {
+    background-image: url(../images/illustration-editor-mobile.svg);
+    background-position: 50% 175px;
+    background-repeat: no-repeat;
+    padding: 100px 25px 10px;
+}
+
+.designed_text_container {
+    padding: 420px 15px 0;
+}
+
+.designed_text {
+    margin-bottom: 45px;
+}
+
+/*** State of the Art Infrastructure ***/
+
+.art {
+    background-image: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-radius: 0 100px 0 100px;
+    margin: 205px 0 0;
+    padding-bottom: 100px;
+}
+
+.art_container {
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-position: 50% -235px;
+    background-repeat: no-repeat;
+    background-size: 158%;
+    border-radius: 0 100px 0 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.art_img {
+    margin: -183px auto 10px;
+    width: 100%;
+}
+
+.art_text {
+    padding: 0 35px 0;
+}
+
+.art h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.art p {
+    color: hsl(240, 2%, 79%);
+    letter-spacing: 0.5px;
+    line-height: 1.75;
+    font-family: 'Overpass', sans-serif;
+}
+
+/*** Benefits ***/
+
+.benefits {
+    background-image: url(../images/illustration-laptop-mobile.svg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    margin: 60px 0 40px;
+    padding: 395px 25px 10px;
+}
+
+.benefits_text {
+    padding: 0 17px;
+}
+
+.benefits_text p {
+    margin: 20px 0 40px;
+}
+
+/** Footer **/
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    border-radius: 0 100px 0 0;
+    color: hsl(240, 2%, 79%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 75px 0;
+}
+
+.footer_logo {
+    margin-bottom: 25px;
+}
+
+.footer_quicklinks {
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer a {
+    border: none;
+    font-size: 1.1rem;
+    margin-bottom: 13px;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    border-bottom: 1px solid hsl(240, 2%, 79%);
+}
+
+.footer_quicklinks_heading {
+    font-weight: 700;
+    margin: 40px 0 35px;
+    opacity: 1;
+}
+
+.footer_quicklinks_heading:hover {
+    border: none;
+}
+
+/** Attribution **/
+
+.attribution {
+    background-color: hsl(237, 23%, 32%);
+    color: hsl(0, 0%, 100%);
+    font-size: 11px;
+    text-shadow: none;
+    margin: 0;
+}
+
+.attribution a {
+    color: hsl(13, 100%, 72%);
+    font-weight: 700;
+}
+
+.attribution strong {
+    color: hsl(355, 100%, 74%);
+}
+
+@media (min-width:960px) {
+
+    /*** Wrapper ***/
+
+    .wrapper {
+        max-width: 1440px;
+    }
+
+    /** Header **/
+
+    header {
+        background-image: url(../images/bg-pattern-intro.svg), linear-gradient(340deg, hsl(353, 100%, 62%) 36%, hsl(13, 100%, 72%));
+        background-position: 25% 52%;
+        background-size: 2900px;
+        padding: 55px 150px 135px;
+    }
+
+    /*** Navbar ***/
+
+    .nav_logo {
+        margin-right: 60px;
+        width: 95px;
+    }
+
+    .nav_menu {
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: hsl(0, 0%, 100%);
+        justify-content: space-between;
+        position: relative;
+        top: 0;
+        padding: 0;
+        opacity: 1;
+    }
+
+    .nav_menu_visibility {
+        display: flex;
+    }
+
+    .nav_menu_list {
+        display: flex;
+        border-bottom: none;
+    }
+
+    .nav_main_link_container {
+        margin: 0 30px 0 0;
+        position: relative;
+    }
+
+    .nav_main_link {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0 6px 0 0;
+        font-family: 'Ubuntu', sans-serif;
+        opacity: 0.6;
+    }
+
+    .active_nav_menu,
+    .nav_main_link:hover {
+        border-bottom: 2px solid hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 100%);
+        opacity: 0.9;
+    }
+
+    .nav_login_btn:hover {
+        color: hsl(0, 0%, 100%);
+        opacity: 0.9;
+    }
+
+    .nav_menu_list img {
+        width: 10px;
+    }
+
+    .nav_secondary_menu {
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: hsl(240deg 2% 49%) 0px 10px 30px -10px;
+        margin: 0;
+        left: -25px;
+        padding: 13px 0 13px 25px;
+        position: absolute;
+        text-align: left;
+        top: 55px;
+        width: 160px;
+    }
+
+    .nav_secondary_menu a {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 0.91rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        margin: 15px auto;
+    }
+
+    .nav_secondary_menu a:hover {
+        font-weight: 600;
+    }
+
+    .nav_btns {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav_btns a {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1em;
+    }
+
+    .nav_login_btn {
+        opacity: 0.6;
+        margin-right: 30px;
+    }
+
+    .nav_signup_btn {
+        background-color: hsl(0, 0%, 100%);
+        background-image: none;
+        color: hsl(356, 100%, 66%);
+        padding: 14px 0;
+        margin: 0;
+    }
+
+    .nav_signup_btn:hover {
+        background-image: none;
+        background-color: hsl(355, 100%, 74%);
+    }
+
+    .light_arrow {
+        display: inline-block;
+    }
+
+    .active_light_arrow {
+        opacity: 0.7;
+    }
+
+    .dark_arrow {
+        display: none;
+    }
+
+    .nav_menu_controller {
+        display: none;
+    }
+
+    /*** Introduction ***/
+
+    .introduction {
+        padding: 115px 10px 0;
+    }
+
+    h1 {
+        font-size: 3.55rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin: 15px 0 30px;
+    }
+
+    .introduction_btns {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .introduction_btns .btn {
+        padding: 13px 0;
+    }
+
+    .introduction_btns .btn:hover {
+        border: none;
+    }
+
+    /*** Designed for the Future ***/
+
+    .designed {
+        background-image: url(../images/illustration-editor-desktop.svg);
+        background-position: 152% 0;
+        background-size: 860px;
+        height: 830px;
+        padding: 65px 150px 10px;
+        margin: 65px 0 0;
+    }
+
+    .designed h3 {
+        font-size: 2.3rem;
+    }
+
+    .designed_text_container {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 105px 15px 0;
+    }
+
+    .designed_text {
+        margin-bottom: 80px;
+    }
+
+    .designed_text h3 {
+        font-size: 1.55rem;
+    }
+
+    .designed_text p {
+        margin-right: 15px;
+    }
+
+    /*** State of the Art Infrastructure ***/
+
+    .art {
+        background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+        height: 375px;
+        margin: 45px 0 0;
+        padding: 0;
+    }
+
+    .art_container {
+        background-position: -200px -485px;
+        background-size: 71%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 375px;
+        padding: 0 150px 0 105px;
+        text-align: left;
+    }
+
+    .art_img {
+        margin: -65px auto 10px;
+        width: 95%;
+    }
+
+    .art_text {
+        padding: 0 20px 0 35px;
+        margin-bottom: 85px;
+    }
+
+    .art h2 {
+        font-size: 2.20rem;
+    }
+
+    .art p {
+        font-size: 0.93rem;
+    }
+
+    /*** Benefits ***/
+
+    .benefits {
+        background-image: url(../images/illustration-laptop-desktop.svg);
+        background-position: -58% 0;
+        background-size: 67%;
+        margin: 115px 0 60px;
+        padding: 65px 140px 160px;
+    }
+
+    .benefits_text_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        padding: 105px 15px 0;
+    }
+
+    .benefits_text p {
+        margin: 20px 0 60px;
+    }
+
+    /** Footer **/
+
+    footer {
+        display: grid;
+        align-items: start;
+        padding: 65px 160px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .footer_quicklinks {
+        align-items: start;
+        margin-top: 7px;
+    }
+
+    footer a {
+        font-size: 0.95rem;
+    }
+
+    .footer_quicklinks_heading {
+        font-weight: 500;
+        margin: 0 0 35px;
+    }
+
+}
